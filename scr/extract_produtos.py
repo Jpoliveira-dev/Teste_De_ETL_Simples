@@ -32,13 +32,13 @@ def extrair_produtos():
             "Categoria": categoria
         })
 
-    df = pd.DataFrame(registros)
+    df_produtos = pd.DataFrame(registros)
 
-    return df
+    return df_produtos
 
 
 # teste rápido direto no arquivo
 if __name__ == "__main__":
-    df = extrair_produtos()
-    print(df)
-    print("\nTotal de registros:", len(df))
+    df_produtos = extrair_produtos()
+    print(df_produtos)
+    print("\nTotal de registros:", len(df_produtos))
