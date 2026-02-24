@@ -49,12 +49,11 @@ def extrair_vendas():
             "Situação":situacao,
         })
 
-    df= pd.DataFrame(registros)
+    df_vendas= pd.DataFrame(registros)
 
-    return df
+    return df_vendas
 
 if __name__ == "__main__":
-     df = extrair_vendas()
-     print(df)
-     print("\nTotal de registros:", len(df))
-
+     df_vendas = extrair_vendas()
+     print(df_vendas)
+     print("\nTotal de registros:", len(df_vendas))
